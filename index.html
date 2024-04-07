@@ -1,5 +1,5 @@
    <!DOCTYPE html>
-    <html lang="en">
+    <html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,32 +11,36 @@
 
         <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
+        <link rel="stylesheet" href="style.css">
     </head>
-<body>
-    <header>
-        <div>
-            <img src="img/personagens_gestao.webp">
-            <nav>
-                <a>Apresentação</a>
-                <a>Skills</a>
-                <a>Contato</a>
-            </nav>
-        </div>
-    </header>
+    <body>
+        <header>
+            <div class="backgroundheadercolor">
+                <div class="containerheader">  
+                     <img class="logosite" src="img/imagem github.png">
+                     <nav class="containerButtons">
+                          <a class="buttonheader" href="#apresentação">Apresentação</a>
+                          <a class="buttonheader" href="#skills">Skills</a>
+                          <a class="buttonheader" href="Contato">Contato</a>
+                     </nav>
+                </div>     
+            </div>
+        </header>
 
     <main>
         <section title="Apresentação"
-            <div>
+            <div id="apresentacao">
                 <div>
                     <h1>Mago</h1>
                     <p>Se você está em busca de alguém capaz de tornar suas visões online em verdadeiras obras-primas digitais, você está no lugar certo. Sou o Mago do Desenvolvimento Web, e minha paixão é transformar conceitos abstratos em experiências digitais tangíveis.</p>
                 </div>
-                <img src="img/imagem github.png">
+                <img src="img/personagens_gestao.webp">
             </div>
         </section>
 
         <section title="Skills"
-            <div>
+            <div id="Skills">
+                <h2>Skills</h2>
                 <div>
                     <img src="img/png-clipart-html-logo-html5-logo-icons-logos-emojis-tech-companies-thumbnail.png"
                     <h2>HTML</h2>
@@ -60,25 +64,33 @@
         </section>
 
         <section title="Contato">
-            <div>
+            <div id="contato">
                 <p>Preencha o formulário em contato</p>
                 <div>
-                    <label for="nome">Nome:</label>
-                    <input type="text" name="nome"/>
-                    <label for="email">E-mail:</label>
-                    <input type="email" name="nome"/>
-                    <label for="numero">Telefone:</label>
-                    <input type="text" name="nome"/>
+
+                    <form>
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome"/>
+
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="nome"/>
+
+                        <label for="numero">Telefone:</label>
+                        <input type="text" name="nome"/>
+
+                        <button type="submit">Enviar</button>
+                    </form>
+
                 </div>
-
-            </div>
-        
-        <section>
-            <div>
-
             </div>
         </section>
-            </div>
     </main>
+    
+    <footer>
+        <div>
+            <a href="img/logo_github.png" target="_blank"><img src="img/logo_github.png"></a>
+            <a href="mailto:mago.unintese@gmail.com">mago.unintese@gmail.com</a>
+            </div>
+    </footer>
 </body>
 </html>  
