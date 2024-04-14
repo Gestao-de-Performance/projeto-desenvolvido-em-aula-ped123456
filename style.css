@@ -8,15 +8,16 @@
     --purple-500: #5A13B4; 
 }
 
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
 body{
     background-color: var(--black-300);
     margin: 0;
     padding: 0;
 }
 
-*{
-    font-family: "Montserrat", sans-serif;
-}
 
 .backgroundheadercolor{
     background-color: var(--purple-300);
@@ -58,15 +59,18 @@ body{
     margin: 2% 10%;
     gap: 40px;
 }
+
 #apresentacao > div {
     width: 750px;
 }
+
 #apresentacao h1 {
     font-size: 2.5rem;
     color: var(--white-300);
     font-weight: bold;
     margin-bottom: 10px;
 }
+
 #apresentacao p {
     font-size: 1.4rem;
     color: var(--white-300);
