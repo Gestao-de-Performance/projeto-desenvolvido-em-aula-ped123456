@@ -7,7 +7,7 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <meta name="description" content="Descrição da pagina que estamos criando em aula">
-            <meta name="keywords" content="mago, site do mago, unintese, escola de programadores, prgramador, html, css, javascript, Programador, Programador">
+            <meta name="keywords" content="mago, site do mago, unintese, escola de programadores, prgramador, html, css, javascript, PROGRAMADOR, Programador">
             <meta name="author" content="Mago">
         
             <title>Site do Mago</title>
@@ -25,9 +25,9 @@
                     <div class="containerHeader">  
                         <img class="logosite" src="img/imagem github.png">
                         <nav class="containerButtons">
-                            <a class="buttonHeader" href="#apresentação">Apresentação</a>
-                            <a class="buttonHeader" href="#skills">Skills</a>
-                            <a class="buttonHeader" href="#contato">Contato</a>
+                            <a class="button" href="#apresentação">Apresentação</a>
+                            <a class="button" href="#skills">Skills</a>
+                            <a class="button" href="#contato">Contato</a>
                         </nav>
                     </div>     
                 </div>
@@ -35,59 +35,60 @@
 
             <main>
                 <section title="Apresentação">
-                    <div id="apresentacao">
+                    <div id="apresentacao" class="marginContainer">
                         <div>
-                            <h1>Mago</h1>
-                            <p>Se você está em busca de alguém capaz de tornar suas visões online em verdadeiras obras-primas digitais, você está no lugar certo. Sou o Mago do Desenvolvimento Web, e minha paixão é transformar conceitos abstratos em experiências digitais tangíveis.</p>
+                            <h1 class="tituloBloco">Mago</h1>
+                            <p class="paragrafo">Se você está em busca de alguém capaz de tornar suas visões online em verdadeiras obras-primas digitais, você está no lugar certo. Sou o Mago do Desenvolvimento Web, e minha paixão é transformar conceitos abstratos em experiências digitais tangíveis.</p>
                         </div>
-                        <img src="img/personagens_gestao.webp">
+                        <img width="500px" src="img/personagens_gestao.webp">
                     </div>
                 </section>
 
                 <section title="Skills">
-                    <div id="Skills">
-                        <h2>Skills</h2>
-                        <div>
-                            <img src="img/png-clipart-html-logo-html5-logo-icons-logos-emojis-tech-companies-thumbnail.png">
-                            <h3>HTML</h3>
-                        </div>
+                    <div id="Skills" class="marginContainer">
+                        <h2 class="tituloBloco">Skills</h2>
 
-                        <div>
-                            <img src="img/png-clipart-html-logo-html5-logo-icons-logos-emojis-tech-companies-thumbnail.png">
-                            <h3>CSS</h3>
-                        </div>    
+                        <div class="skillContainer">
+                            <div class="skill htmlColorBorder">
+                                <img src="img/logo_html (1).png">
+                                <h3>HTML</h3>
+                            </div>    
+                        
+                            <div class="skill cssColorBorder">
+                                <img src="img/logo_html (1).png">
+                                <h3>CSS</h3>
+                            </div>    
 
-                        <div>
-                            <img src="img/png-clipart-html-logo-html5-logo-icons-logos-emojis-tech-companies-thumbnail.png">
-                            <h3>JavaScript</h3>
-                        </div>    
+                            <div class="skill jsColorBorder">
+                                <img src="img/logo_html (1).png">
+                                <h3>JavaScript</h3>
+                            </div>    
 
-                        <div>
-                            <img src="img/png-clipart-html-logo-html5-logo-icons-logos-emojis-tech-companies-thumbnail.png">
-                            <h3>WordPress</h3>
-                        </div>    
+                            <div class="skill wpColorBorder">
+                                <img src="img/logo_html (1).png">
+                                <h3>WordPress</h3>
+                            </div>
+                        </div>        
                     </div>
                 </section>
 
                 <section title="Contato">
-                    <div id="contato">
-                        <p>Preencha o formulário em contato</p>
-                        <div>
+                    <div id="contato" class="marginContainer">
+                        <h2 class="tituloBloco">Contato</h2>
+                        <p class="paragrafo">Preencha o formulário e entrarei em contato</p>
+                        
+                        <form class="formularioContato">
 
-                            <form>
-                                <label for="nome">Nome:</label>
-                                <input type="text" name="nome"/>
+                            <input type="text" name="nome" placeholder="Digite seu nome."/>
+                                
+                            <input type="email" name="email" placeholder="E-mail."/>
+                            
+                            <input type="phone" name="numero" placeholder="Telefone com DDD."/>
 
-                                <label for="email">E-mail:</label>
-                                <input type="email" name="nome"/>
+                            <textarea placeholder="Escreva seu assunto"></textarea>
 
-                                <label for="numero">Telefone:</label>
-                                <input type="text" name="nome"/>
-
-                                <button type="submit">Enviar</button>
-                            </form>
-
-                        </div>
+                            <button class="button" type="submit">Enviar</button>
+                        </form>
                     </div>
                 </section>
             </main>
